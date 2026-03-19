@@ -6,4 +6,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
   base: "/Seerati",
+  build: {
+    outDir: "build", // Ensure this matches what you used in npm run deploy
+  },
 });
